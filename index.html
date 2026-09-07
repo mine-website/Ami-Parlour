@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ami's Parlour | Luxury Salon & Spa - Gota, Ahmedabad</title>
+  
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            roseGold: {
+              50: '#fdf8f6',
+              100: '#faefe9',
+              200: '#f5ded4',
+              300: '#ecc5b5',
+              400: '#dea18d',
+              500: '#cf7b63',
+              600: '#bd6048',
+              700: '#9d4c38',
+              800: '#814132',
+              900: '#6c3a2e',
+            },
+            champagne: {
+              50: '#fdfbf7',
+              100: '#f8f4ec',
+              200: '#f1e6d2',
+              300: '#e5d1ae',
+              400: '#d7b785',
+              500: '#cb9e60',
+              600: '#be874a',
+            },
+            parlourDark: '#1d1716',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom luxury scrollbar & subtle decorative patterns */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #faf7f5;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #dea18d;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #cf7b63;
+    }
+    .hero-glow {
+      background: radial-gradient(circle at 50% 30%, rgba(222, 161, 141, 0.25), transparent 70%);
+    }
+    .luxury-card {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .luxury-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 30px -10px rgba(190, 135, 74, 0.15);
+    }
+  </style>
+</head>
+<body class="bg-[#FCF9F7] text-gray-800 font-sans antialiased selection:bg-roseGold-200 selection:text-roseGold-900 pb-24 md:pb-0">
+
+  <!-- Top Notification Bar -->
+  <div class="bg-gradient-to-r from-roseGold-800 via-roseGold-700 to-roseGold-900 text-white text-xs sm:text-sm py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="bg-champagne-400 text-parlourDark text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">Special Festival Offer</span>
+        <span class="font-medium">Valid: 01/09/2026 to 30/09/2026</span>
+        <span class="hidden md:inline text-roseGold-200">|</span>
+        <span class="hidden md:inline text-amber-200 font-semibold">✨ Hath Ma Mukvani Mehndi Na Con Madse (Complimentary Mehndi Cones!)</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs">
+        <a href="tel:6352891036" class="hover:text-champagne-200 transition-colors flex items-center gap-1.5 font-medium">
+          <i class="fa-solid fa-phone"></i> +91 6352891036
+        </a>
+        <span class="opacity-60">•</span>
+        <span class="flex items-center gap-1 text-roseGold-200">
+          <i class="fa-solid fa-location-dot"></i> Gota, Ahmedabad
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-roseGold-100 shadow-sm transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Logo & Brand Name -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-roseGold-300 via-champagne-300 to-roseGold-500 flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
+          <span class="font-serif font-bold text-2xl tracking-tighter">A</span>
+        </div>
+        <div>
+          <span class="font-serif text-2xl font-bold tracking-tight text-gray-900 block leading-tight">
+            Ami's Parlour
+          </span>
+          <span class="text-[11px] uppercase font-semibold tracking-widest text-roseGold-600 block">
+            By Ami Sheth • Ladies Beauty Studio
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-gray-600">
+        <a href="#services" class="hover:text-roseGold-600 transition-colors">Services & Pricing</a>
+        <a href="#special-offer" class="hover:text-roseGold-600 transition-colors">Festive Deals</a>
+        <a href="#why-us" class="hover:text-roseGold-600 transition-colors">Why Choose Us</a>
+        <a href="#location" class="hover:text-roseGold-600 transition-colors">Visit Salon</a>
+      </nav>
+
+      <!-- Header Action CTAs -->
+      <div class="flex items-center gap-3">
+        <button onclick="openEstimatorDrawer()" class="relative p-2.5 rounded-full bg-roseGold-50 text-roseGold-700 hover:bg-roseGold-100 transition-all border border-roseGold-200" title="Selected Services">
+          <i class="fa-solid fa-sparkles text-lg"></i>
+          <span id="headerCartCount" class="absolute -top-1 -right-1 bg-roseGold-600 text-white text-[11px] font-bold rounded-full w-5 h-5 flex items-center justify-center shadow">0</span>
+        </button>
+
+        <a href="#booking-section" class="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-roseGold-600 to-roseGold-700 hover:from-roseGold-700 hover:to-roseGold-800 text-white font-medium text-sm px-5 py-2.5 rounded-full shadow-sm hover:shadow transition-all">
+          <i class="fa-regular fa-calendar-check"></i>
+          <span>Book Appointment</span>
+        </a>
+
+        <a href="https://wa.me/916352891036?text=Hello%20Ami%20Sheth,%20I%20would%20like%20to%20inquire%20about%20beauty%20services%20at%20Ami's%20Parlour." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-sm px-4 py-2.5 rounded-full shadow-sm transition-all">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span class="hidden lg:inline">WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section with Luxury Aesthetics -->
+  <section class="relative overflow-hidden hero-glow pt-8 pb-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-roseGold-100/90 text-roseGold-800 border border-roseGold-200 text-xs font-semibold uppercase tracking-wider">
+            <i class="fa-solid fa-crown text-amber-500"></i> Premium Ladies Sanctuary • Gota, Ahmedabad
+          </div>
+
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl text-parlourDark font-bold leading-tight">
+            Reveal Your Natural Glow & Elegance.
+          </h1>
+
+          <p class="text-base sm:text-lg text-gray-600 max-w-xl mx-auto lg:mx-0 font-normal leading-relaxed">
+            Welcome to <strong>Ami's Parlour</strong> by <span class="text-roseGold-800 font-medium">Ami Sheth</span>. Experience professional skincare, revitalizing facials, calming hair spas, and grooming rituals crafted with 100% hygienic standards.
+          </p>
+
+          <!-- Highlight Promo Ribbon -->
+          <div class="p-4 rounded-2xl bg-gradient-to-r from-amber-50 via-roseGold-50 to-amber-50 border border-amber-200/80 shadow-sm flex flex-col sm:flex-row items-center gap-4 text-left">
+            <div class="w-12 h-12 rounded-xl bg-amber-100 flex-shrink-0 flex items-center justify-center text-amber-700 text-2xl">
+              🎁
+            </div>
+            <div>
+              <div class="text-xs uppercase tracking-wider font-bold text-amber-800">Limited Period Gift (Sep 1 - Sep 30, 2026)</div>
+              <div class="font-serif text-base font-semibold text-gray-900">"Hath Ma Mukvani Mehndi Na Con Madse"</div>
+              <p class="text-xs text-gray-600">Complimentary organic herbal Mehndi cones included with your appointment bookings!</p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="#services" class="px-7 py-3.5 rounded-full bg-parlourDark text-white font-medium hover:bg-gray-800 transition-all shadow-md hover:shadow-lg flex items-center gap-2">
+              <span>Explore Rate Card</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+            <a href="#booking-section" class="px-7 py-3.5 rounded-full bg-white text-roseGold-700 font-medium border border-roseGold-300 hover:bg-roseGold-50 transition-all shadow-sm flex items-center gap-2">
+              <i class="fa-solid fa-calendar-day"></i>
+              <span>Book An Appointment</span>
+            </a>
+          </div>
+
+          <!-- Quick Trust Badges -->
+          <div class="grid grid-cols-3 gap-3 pt-6 border-t border-roseGold-200/60 max-w-lg mx-auto lg:mx-0 text-center">
+            <div class="p-2">
+              <div class="text-roseGold-700 font-bold text-xl">₹99</div>
+              <div class="text-xs text-gray-600 font-medium">Starting Deals</div>
+            </div>
+            <div class="p-2 border-x border-roseGold-200/60">
+              <div class="text-roseGold-700 font-bold text-xl">100%</div>
+              <div class="text-xs text-gray-600 font-medium">Hygiene & Safety</div>
+            </div>
+            <div class="p-2">
+              <div class="text-roseGold-700 font-bold text-xl">Branded</div>
+              <div class="text-xs text-gray-600 font-medium">Lotus, O3+, Shahnaz</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Images Visual Showcase -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md">
+            <!-- Decorative circle backings -->
+            <div class="absolute -top-6 -left-6 w-32 h-32 bg-champagne-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
+            <div class="absolute -bottom-8 -right-6 w-44 h-44 bg-roseGold-300 rounded-full mix-blend-multiply filter blur-2xl opacity-60"></div>
+            
+            <div class="relative space-y-4">
+              <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] object-cover">
+                <img 
+                  src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80" 
+                  alt="Facial and skincare treatment at Ami's Parlour" 
+                  class="w-full h-full object-cover transform hover:scale-105 transition duration-700"
+                  loading="lazy"
+                  onerror="this.src='https://placehold.co/800x1000/eedfd5/6c3a2e?text=Ami+Parlour+Skincare'"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                <div class="absolute bottom-6 left-6 right-6 text-white">
+                  <span class="px-3 py-1 rounded-full bg-roseGold-500/80 backdrop-blur-sm text-xs font-semibold uppercase">Women Only Sanctuary</span>
+                  <p class="font-serif text-xl font-bold mt-2">Personalized Beauty & Hair Care</p>
+                  <p class="text-xs text-roseGold-100">Gota, Ahmedabad • Managed directly by Ami Sheth</p>
+                </div>
+              </div>
+
+              <!-- Floating Special Card -->
+              <div class="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-roseGold-100 flex items-center gap-3">
+                <div class="w-12 h-12 rounded-xl bg-roseGold-100 flex items-center justify-center text-roseGold-600 text-xl font-bold">
+                  ₹99
+                </div>
+                <div>
+                  <div class="text-xs font-bold text-gray-900">Express Specials</div>
+                  <div class="text-[11px] text-gray-500">Eyebrows, D-Tan, Cleanups & More</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Festive Offer Banner Section -->
+  <section id="special-offer" class="py-12 bg-gradient-to-r from-roseGold-900 via-parlourDark to-roseGold-900 text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#dea18d_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8 bg-white/5 p-6 sm:p-8 rounded-3xl border border-white/10 backdrop-blur-md">
+        
+        <div class="space-y-3 text-center md:text-left">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-champagne-400 text-parlourDark text-xs font-bold uppercase">
+            <i class="fa-solid fa-sparkles"></i> Limited Festive Campaign
+          </div>
+          <h2 class="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
+            Special September Festive Month!
+          </h2>
+          <p class="text-roseGold-200 text-sm sm:text-base max-w-xl">
+            Celebrate festivities with radiant skin. Book any service between 
+            <span class="text-champagne-300 font-semibold underline decoration-champagne-400">01/09/2026 to 30/09/2026</span> and receive complimentary herbal Mehndi cones:
+          </p>
+          <div class="inline-block bg-white/10 px-4 py-2 rounded-xl border border-roseGold-400/40 text-champagne-200 font-serif italic text-base sm:text-lg">
+            "Hath Ma Mukvani Mehndi Na Con Madse"
+          </div>
+        </div>
+
+        <!-- Action & Timer display -->
+        <div class="flex flex-col items-center sm:items-end gap-3 flex-shrink-0">
+          <div class="text-center sm:text-right">
+            <span class="text-xs uppercase text-roseGold-300 font-semibold block tracking-wider">Bookings open daily</span>
+            <span class="text-xl sm:text-2xl font-bold text-white tracking-tight">Call / WhatsApp Now</span>
+          </div>
+          <a href="https://wa.me/916352891036?text=Hello%20Ami%20ben,%20I%20want%20to%20book%20an%20appointment%20under%20the%20September%20Festive%20Offer!" target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 rounded-full bg-gradient-to-r from-champagne-400 to-champagne-500 text-parlourDark font-bold hover:brightness-105 transition-all shadow-lg shadow-champagne-500/20 flex items-center gap-2 text-sm sm:text-base">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>Claim Festive Offer</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Services & Rate Card with Filter & Package Selector -->
+  <section id="services" class="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto space-y-4 mb-12">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-roseGold-100 text-roseGold-800 text-xs font-bold uppercase tracking-wider">
+        Full Rate Card & Menu
+      </div>
+      <h2 class="font-serif text-3xl sm:text-4xl font-bold text-parlourDark">
+        Curated Services For Every Occasion
+      </h2>
+      <p class="text-gray-600 text-sm sm:text-base">
+        Select the treatments you desire. Add multiple services to your session to see the total cost estimate and instantly book directly with Ami Sheth on WhatsApp.
+      </p>
+    </div>
+
+    <!-- Category Filters & Search Bar -->
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-8">
+      <!-- Tabs -->
+      <div class="flex flex-wrap items-center justify-center gap-2 w-full md:w-auto">
+        <button onclick="filterCategory('all')" id="tab-all" class="category-tab px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all bg-roseGold-700 text-white shadow-sm">
+          All Services (<span id="count-all">19</span>)
+        </button>
+        <button onclick="filterCategory('express')" id="tab-express" class="category-tab px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all bg-white text-gray-700 hover:bg-roseGold-50 border border-gray-200">
+          ₹99 Express Specials
+        </button>
+        <button onclick="filterCategory('facial')" id="tab-facial" class="category-tab px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all bg-white text-gray-700 hover:bg-roseGold-50 border border-gray-200">
+          Facials & Glow
+        </button>
+        <button onclick="filterCategory('hair')" id="tab-hair" class="category-tab px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all bg-white text-gray-700 hover:bg-roseGold-50 border border-gray-200">
+          Hair Care & Styling
+        </button>
+        <button onclick="filterCategory('body')" id="tab-body" class="category-tab px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all bg-white text-gray-700 hover:bg-roseGold-50 border border-gray-200">
+          Waxing & Manicure/Pedicure
+        </button>
+      </div>
+
+      <!-- Search Box -->
+      <div class="relative w-full md:w-72">
+        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3.5 text-gray-400 text-sm"></i>
+        <input 
+          type="text" 
+          id="serviceSearch" 
+          oninput="handleSearch()"
+          placeholder="Search treatments (e.g. Lotus, Spa)..." 
+          class="w-full pl-10 pr-4 py-2 rounded-full text-xs sm:text-sm bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-roseGold-400 text-gray-800"
+        />
+      </div>
+    </div>
+
+    <!-- Services Grid -->
+    <div id="servicesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Injected via JavaScript -->
+    </div>
+
+    <!-- Empty state for search -->
+    <div id="noResults" class="hidden text-center py-16">
+      <div class="text-4xl text-gray-300 mb-3"><i class="fa-solid fa-magnifying-glass"></i></div>
+      <h3 class="text-lg font-semibold text-gray-700">No services match your search</h3>
+      <p class="text-xs text-gray-500 mt-1">Try searching for facials, hair spa, or wax.</p>
+    </div>
+  </section>
+
+  <!-- Floating Summary Bar (Mobile Sticky / Desktop Visible when items > 0) -->
+  <div id="floatingSummary" class="fixed bottom-4 left-4 right-4 md:left-auto md:right-8 md:bottom-8 z-30 max-w-md mx-auto hidden">
+    <div class="bg-parlourDark text-white p-4 rounded-2xl shadow-2xl border border-roseGold-400/40 backdrop-blur-lg flex items-center justify-between gap-4">
+      <div>
+        <div class="text-[11px] text-roseGold-200 font-medium">
+          <span id="selectedCount">0</span> treatment(s) selected
+        </div>
+        <div class="text-xl font-serif font-bold text-champagne-300">
+          ₹<span id="selectedTotal">0</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        <button onclick="openEstimatorDrawer()" class="px-3.5 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-semibold transition-colors">
+          View List
+        </button>
+        <button onclick="openWhatsAppCheckout()" class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition-colors flex items-center gap-1.5 shadow-md">
+          <i class="fa-brands fa-whatsapp text-sm"></i>
+          <span>Book All</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart / Package Drawer Modal -->
+  <div id="estimatorDrawer" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex justify-end transition-opacity duration-300 opacity-0 pointer-events-none">
+    <div class="bg-white w-full max-w-md h-full shadow-2xl flex flex-col justify-between overflow-hidden transform translate-x-full transition-transform duration-300 ease-out" id="drawerContent">
+      <!-- Drawer Header -->
+      <div class="p-5 border-b border-gray-100 flex items-center justify-between bg-roseGold-50">
+        <div>
+          <h3 class="font-serif text-lg font-bold text-parlourDark">Your Selected Treatments</h3>
+          <p class="text-xs text-gray-500">Estimate & instant WhatsApp booking</p>
+        </div>
+        <button onclick="closeEstimatorDrawer()" class="w-8 h-8 rounded-full bg-white text-gray-500 hover:text-gray-900 flex items-center justify-center shadow-sm">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Drawer Body (Items List) -->
+      <div class="p-5 overflow-y-auto flex-grow space-y-3" id="drawerItemsList">
+        <!-- Rendered items -->
+      </div>
+
+      <!-- Complimentary Perks reminder -->
+      <div class="p-3 mx-5 bg-amber-50 rounded-xl border border-amber-200 text-xs text-amber-900 flex items-center gap-2">
+        <span class="text-lg">🌿</span>
+        <span>Includes <strong>Free Hath Ma Mukvani Mehndi Cones</strong> valid till 30/09/2026!</span>
+      </div>
+
+      <!-- Drawer Footer -->
+      <div class="p-5 border-t border-gray-100 bg-gray-50 space-y-3">
+        <div class="flex justify-between items-center text-sm">
+          <span class="text-gray-500 font-medium">Estimated Total</span>
+          <span class="font-serif text-2xl font-bold text-roseGold-800">₹<span id="drawerTotal">0</span></span>
+        </div>
+        <p class="text-[11px] text-gray-400">Taxes included. Cash, UPI or online payment accepted at the parlour.</p>
+        
+        <div class="grid grid-cols-2 gap-2 pt-2">
+          <button onclick="clearAllSelections()" class="py-2.5 rounded-xl border border-gray-300 text-gray-600 font-semibold text-xs hover:bg-gray-100 transition-colors">
+            Clear All
+          </button>
+          <button onclick="openWhatsAppCheckout()" class="py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow">
+            <i class="fa-brands fa-whatsapp text-sm"></i>
+            <span>Send to WhatsApp</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Direct Booking Form & Salon Details Section -->
+  <section id="booking-section" class="py-16 bg-[#F6EFEA] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        
+        <!-- Left: Booking Form -->
+        <div class="lg:col-span-7 bg-white p-6 sm:p-10 rounded-3xl shadow-sm border border-roseGold-100">
+          <div class="space-y-2 mb-6">
+            <span class="text-xs font-bold uppercase tracking-wider text-roseGold-600">Quick Reservation</span>
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-parlourDark">Book Your Parlour Slot</h3>
+            <p class="text-xs sm:text-sm text-gray-600">Fill in your preferred date and time. We will instantly format a personalized confirmation message for WhatsApp.</p>
+          </div>
+
+          <form id="appointmentForm" onsubmit="handleAppointmentSubmit(event)" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Your Full Name *</label>
+                <input 
+                  type="text" 
+                  id="clientName" 
+                  required 
+                  placeholder="e.g. Pooja Patel" 
+                  class="w-full px-4 py-2.5 rounded-xl bg-gray-50 border border-gray-200 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-roseGold-500"
+                />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Phone / WhatsApp No *</label>
+                <input 
+                  type="tel" 
+                  id="clientPhone" 
+                  required 
+                  placeholder="e.g. 9876543210" 
+                  class="w-full px-4 py-2.5 rounded-xl bg-gray-50 border border-gray-200 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-roseGold-500"
+                />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Preferred Date *</label>
+                <input 
+                  type="date" 
+                  id="clientDate" 
+                  required 
+                  class="w-full px-4 py-2.5 rounded-xl bg-gray-50 border border-gray-200 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-roseGold-500"
+                />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Preferred Time Slot *</label>
+                <select 
+                  id="clientTime" 
+                  required 
+                  class="w-full px-4 py-2.5 rounded-xl bg-gray-50 border border-gray-200 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-roseGold-500 text-gray-700"
+                >
+                  <option value="">Select a time slot</option>
+                  <option value="Morning (10:00 AM - 12:00 PM)">Morning (10:00 AM - 12:00 PM)</option>
+                  <option value="Afternoon (12:00 PM - 03:00 PM)">Afternoon (12:00 PM - 03:00 PM)</option>
+                  <option value="Evening (03:00 PM - 06:00 PM)">Evening (03:00 PM - 06:00 PM)</option>
+                  <option value="Late Evening (06:00 PM - 08:30 PM)">Late Evening (06:00 PM - 08:30 PM)</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Selected Treatments</label>
+              <div id="bookingSelectedServicesPreview" class="p-3 bg-roseGold-50/50 rounded-xl border border-roseGold-100 text-xs text-gray-600 min-h-[44px]">
+                No treatments picked yet. Click "Add" on any service above or type in special requirements below.
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Special Notes / Skin Concerns (Optional)</label>
+              <textarea 
+                id="clientNotes" 
+                rows="2" 
+                placeholder="Sensitive skin, wedding preparations, henna requirements, etc." 
+                class="w-full px-4 py-2 rounded-xl bg-gray-50 border border-gray-200 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-roseGold-500"
+              ></textarea>
+            </div>
+
+            <button 
+              type="submit" 
+              class="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white font-bold text-sm sm:text-base shadow-md transition-all flex items-center justify-center gap-2"
+            >
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>Confirm & Send Booking on WhatsApp</span>
+            </button>
+            <p class="text-[11px] text-center text-gray-500">Opens official WhatsApp directly with Ami Sheth (+91 6352891036).</p>
+          </form>
+        </div>
+
+        <!-- Right: Salon Overview & Contact Info -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-sm border border-roseGold-100 space-y-6">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-champagne-600">Sanctuary Address</span>
+              <h4 class="font-serif text-xl font-bold text-parlourDark mt-1">Ami's Parlour</h4>
+              <p class="text-xs text-roseGold-700 font-semibold">Proprietor: Ami Sheth</p>
+            </div>
+
+            <div class="space-y-4 text-sm text-gray-600">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-roseGold-100 flex items-center justify-center text-roseGold-700 flex-shrink-0 mt-0.5">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <strong class="text-gray-900 block">Parlour Address:</strong>
+                  C-103, Seventh Bliss, Near Vishnudhara Garden,<br />
+                  Gota, Ahmedabad – 382481, Gujarat, India.
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-roseGold-100 flex items-center justify-center text-roseGold-700 flex-shrink-0">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <strong class="text-gray-900 block">Direct Call & WhatsApp:</strong>
+                  <a href="tel:6352891036" class="text-roseGold-700 hover:underline font-semibold">+91 6352891036</a>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-roseGold-100 flex items-center justify-center text-roseGold-700 flex-shrink-0">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div>
+                  <strong class="text-gray-900 block">Working Hours:</strong>
+                  10:00 AM – 8:30 PM (Daily, Prior Booking Preferred)
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-roseGold-100 flex items-center justify-center text-roseGold-700 flex-shrink-0">
+                  <i class="fa-solid fa-gift"></i>
+                </div>
+                <div>
+                  <strong class="text-gray-900 block">Special Perk:</strong>
+                  Hath Ma Mukvani Mehndi Na Con Madse with appointments!
+                </div>
+              </div>
+            </div>
+
+            <!-- Map Directions Button -->
+            <div class="pt-2">
+              <a 
+                href="https://maps.google.com/?q=Seventh+Bliss+Vishnudhara+Garden+Gota+Ahmedabad" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-roseGold-50 text-roseGold-800 border border-roseGold-200 hover:bg-roseGold-100 transition-colors font-semibold text-xs sm:text-sm"
+              >
+                <i class="fa-solid fa-map-location-dot"></i>
+                <span>Open in Google Maps / Get Directions</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Why Choose Us Mini Cards -->
+          <div id="why-us" class="grid grid-cols-2 gap-3">
+            <div class="bg-white p-4 rounded-2xl border border-roseGold-100">
+              <div class="text-roseGold-600 text-lg mb-1"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+              <div class="text-xs font-bold text-gray-900">Branded Products</div>
+              <div class="text-[11px] text-gray-500 mt-0.5">Lotus, O3+, Korean formulas & herbal oils.</div>
+            </div>
+            <div class="bg-white p-4 rounded-2xl border border-roseGold-100">
+              <div class="text-roseGold-600 text-lg mb-1"><i class="fa-solid fa-shield-heart"></i></div>
+              <div class="text-xs font-bold text-gray-900">100% Hygienic</div>
+              <div class="text-[11px] text-gray-500 mt-0.5">Sanitized equipment and disposable essentials.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Visual Ambience / Highlights Gallery -->
+  <section id="location" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-10">
+      <h3 class="font-serif text-2xl sm:text-3xl font-bold text-parlourDark">Our Beauty Rituals</h3>
+      <p class="text-xs sm:text-sm text-gray-500 mt-1">A glimpse into facials, waxing, manicure, and haircare services performed with gentle touch.</p>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div class="relative group rounded-2xl overflow-hidden aspect-square">
+        <img 
+          src="https://images.unsplash.com/photo-1512290900672-1f48651a2eb3?auto=format&fit=crop&w=600&q=80" 
+          alt="Facial and Skincare" 
+          class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+          loading="lazy"
+          onerror="this.src='https://placehold.co/600x600/eedfd5/6c3a2e?text=Facial'"
+        />
+        <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors"></div>
+        <span class="absolute bottom-2 left-2 text-white text-xs font-bold bg-black/40 px-2 py-0.5 rounded backdrop-blur-sm">Glow Facials</span>
+      </div>
+
+      <div class="relative group rounded-2xl overflow-hidden aspect-square">
+        <img 
+          src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=600&q=80" 
+          alt="Hair Spa & Massage" 
+          class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+          loading="lazy"
+          onerror="this.src='https://placehold.co/600x600/eedfd5/6c3a2e?text=Hair+Spa'"
+        />
+        <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors"></div>
+        <span class="absolute bottom-2 left-2 text-white text-xs font-bold bg-black/40 px-2 py-0.5 rounded backdrop-blur-sm">Hair Spa & Oil Massage</span>
+      </div>
+
+      <div class="relative group rounded-2xl overflow-hidden aspect-square">
+        <img 
+          src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=600&q=80" 
+          alt="Manicure and Pedicure" 
+          class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+          loading="lazy"
+          onerror="this.src='https://placehold.co/600x600/eedfd5/6c3a2e?text=Manicure'"
+        />
+        <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors"></div>
+        <span class="absolute bottom-2 left-2 text-white text-xs font-bold bg-black/40 px-2 py-0.5 rounded backdrop-blur-sm">Mani & Pedi</span>
+      </div>
+
+      <div class="relative group rounded-2xl overflow-hidden aspect-square">
+        <img 
+          src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" 
+          alt="Waxing & Grooming" 
+          class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+          loading="lazy"
+          onerror="this.src='https://placehold.co/600x600/eedfd5/6c3a2e?text=Grooming'"
+        />
+        <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors"></div>
+        <span class="absolute bottom-2 left-2 text-white text-xs font-bold bg-black/40 px-2 py-0.5 rounded backdrop-blur-sm">Waxing Combos</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-parlourDark text-white pt-12 pb-8 border-t border-roseGold-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-10 border-b border-white/10">
+        <!-- Col 1 -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-roseGold-500 flex items-center justify-center text-white font-serif font-bold text-lg">A</div>
+            <span class="font-serif text-xl font-bold">Ami's Parlour</span>
+          </div>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Your friendly, trusted neighborhood beauty parlor in Gota, Ahmedabad. We offer pocket-friendly beauty, bridal grooming, facials, and hair care with high grade products.
+          </p>
+          <div class="text-xs text-roseGold-300">Owner & Specialist: <strong>Ami Sheth</strong></div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="space-y-3">
+          <h4 class="font-serif text-base font-semibold text-champagne-300">Quick Contact</h4>
+          <p class="text-xs text-gray-300">
+            <strong>Phone / WhatsApp:</strong> <a href="tel:6352891036" class="hover:text-roseGold-300">+91 6352891036</a>
+          </p>
+          <p class="text-xs text-gray-300 leading-relaxed">
+            <strong>Address:</strong> C-103, Seventh Bliss, Nr. Vishnudhara Garden, Gota, Ahmedabad - 382481
+          </p>
+          <div class="text-xs text-amber-300">
+            Special Offer: 01/09/2026 to 30/09/2026
+          </div>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="space-y-3">
+          <h4 class="font-serif text-base font-semibold text-champagne-300">Complimentary Gift</h4>
+          <p class="text-xs text-gray-300 italic">
+            "Hath Ma Mukvani Mehndi Na Con Madse"
+          </p>
+          <p class="text-xs text-gray-400">
+            Enjoy free fresh Mehndi cones with treatments throughout September!
+          </p>
+          <a href="https://wa.me/916352891036" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg font-medium transition-colors">
+            <i class="fa-brands fa-whatsapp"></i> Chat with Ami Sheth
+          </a>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500 gap-3">
+        <p>© 2026 Ami's Parlour. All rights reserved.</p>
+        <p class="text-center sm:text-right">Designed for Ami's Parlour • Gota, Ahmedabad</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Message Container -->
+  <div id="toastNotification" class="fixed top-24 right-4 z-50 transform translate-y-[-100px] opacity-0 transition-all duration-300 pointer-events-none">
+    <div class="bg-gray-900 text-white text-xs px-4 py-3 rounded-xl shadow-xl border border-roseGold-500/50 flex items-center gap-2.5">
+      <i class="fa-solid fa-circle-check text-emerald-400 text-base"></i>
+      <span id="toastMessage">Treatment added to list</span>
+    </div>
+  </div>
+
+  <script>
+    // Complete service catalogue extracted from flyer
+    const servicesData = [
+      // 1. Eyebrow, Face Wax ₹99
+      {
+        id: 'eyebrow-wax',
+        title: 'Eyebrow & Face Wax',
+        category: 'express',
+        price: 99,
+        badge: 'Flyer Deal #1',
+        description: 'Clean eyebrow threading/shaping with gentle facial waxing for instant smooth finish.',
+        duration: '15 mins',
+        popular: true
+      },
+      // 2. D-Tan Only ₹99
+      {
+        id: 'dtan-only',
+        title: 'D – Tan Only',
+        category: 'express',
+        price: 99,
+        badge: 'Flyer Deal #2',
+        description: 'Instant sun-tan removal pack leaving your skin illuminated, fresh and refreshed.',
+        duration: '20 mins',
+        popular: true
+      },
+      // 3. 3 In 1 Clean Up ₹99
+      {
+        id: 'cleanup-3in1',
+        title: '3 In 1 Clean Up',
+        category: 'express',
+        price: 99,
+        badge: 'Flyer Deal #3',
+        description: 'Complete 3-step cleansing, gentle exfoliation and soothing face pack.',
+        duration: '25 mins',
+        popular: true
+      },
+      // 4. Shiner Only ₹99
+      {
+        id: 'shiner-only',
+        title: 'Shiner Only',
+        category: 'express',
+        price: 99,
+        badge: 'Flyer Deal #4',
+        description: 'Skin glow shiner polish treatment for instant party shine and radiant complexion.',
+        duration: '15 mins',
+        popular: false
+      },
+      // 5. Hair Oil Massage 20 Min. Only ₹99
+      {
+        id: 'oil-massage',
+        title: 'Hair Oil Massage (20 Min)',
+        category: 'express',
+        price: 99,
+        badge: 'Flyer Deal #5',
+        description: 'Deep relaxing 20-minute head massage with nourishing warm herbal oils for hair strength.',
+        duration: '20 mins',
+        popular: true
+      },
+      // 6. Hair Colour, Hair Mehndi, Hair Dai Only ₹99 (Only Apply)
+      {
+        id: 'hair-apply',
+        title: 'Hair Colour / Mehndi / Hair Dai Application',
+        category: 'express',
+        price: 99,
+        badge: 'Flyer Deal #6 (Only Apply)',
+        description: 'Professional application of your choice of hair colour, herbal henna mehndi or hair dye.',
+        duration: '30 mins',
+        popular: false
+      },
+      // 7. Wax Full Hand, Half Leg with Underarms Only ₹299
+      {
+        id: 'wax-combo',
+        title: 'Wax Combo: Full Hand, Half Leg & Underarms',
+        category: 'body',
+        price: 299,
+        badge: 'Flyer Deal #7 Super Saver',
+        description: 'Smooth and painless waxing session covering full arms, half legs, and underarms.',
+        duration: '40 mins',
+        popular: true
+      },
+      // 8. Hair Spa ₹499
+      {
+        id: 'hair-spa',
+        title: 'Deep Nourishing Hair Spa',
+        category: 'hair',
+        price: 499,
+        badge: 'Flyer Deal #8',
+        description: 'Intense hydration, steam therapy and cream conditioning for silky, frizz-free hair.',
+        duration: '45 mins',
+        popular: true
+      },
+      // 9. Lotus Facial ₹699 | Gold Facial ₹499
+      {
+        id: 'lotus-facial',
+        title: 'Lotus Herbal Facial',
+        category: 'facial',
+        price: 699,
+        badge: 'Flyer Deal #9 Luxury',
+        description: 'Premium botanical formulation to rejuvenate dull skin and restore natural moisture.',
+        duration: '50 mins',
+        popular: true
+      },
+      {
+        id: 'gold-facial',
+        title: 'Radiant Gold Facial',
+        category: 'facial',
+        price: 499,
+        badge: 'Flyer Deal #9 Festive Glow',
+        description: 'Gold dust infusion gives a luminous, golden bridal glow and improves elasticity.',
+        duration: '45 mins',
+        popular: true
+      },
+      // 10. Diamond facial ₹699 | O3+ Facial ₹699
+      {
+        id: 'diamond-facial',
+        title: 'Diamond Sparkle Facial',
+        category: 'facial',
+        price: 699,
+        badge: 'Flyer Deal #10',
+        description: 'Diamond ash polish that purifies pores, reduces blemishes and gives diamond radiance.',
+        duration: '50 mins',
+        popular: false
+      },
+      {
+        id: 'o3-facial',
+        title: 'O3+ Professional Facial',
+        category: 'facial',
+        price: 699,
+        badge: 'Flyer Deal #10 Celebrity Pick',
+        description: 'Dermatologically inspired oxygen brightening facial for pigmented and dull skin.',
+        duration: '60 mins',
+        popular: true
+      },
+      // 11. D-Tan Facial ₹599 | Vitamin-C Facial ₹499
+      {
+        id: 'dtan-facial',
+        title: 'D-Tan Revitalizing Facial',
+        category: 'facial',
+        price: 599,
+        badge: 'Flyer Deal #11',
+        description: 'Intensive de-tanning facial therapy for sun-damaged and darkened skin tones.',
+        duration: '45 mins',
+        popular: false
+      },
+      {
+        id: 'vitaminc-facial',
+        title: 'Vitamin-C Brightening Facial',
+        category: 'facial',
+        price: 499,
+        badge: 'Flyer Deal #11 Anti-Oxidant',
+        description: 'Enriched with pure Vitamin-C actives to boost collagen and impart a refreshed dewy look.',
+        duration: '45 mins',
+        popular: false
+      },
+      // 12. Fruit Facial ₹299 | Korean Glow Facial ₹499
+      {
+        id: 'fruit-facial',
+        title: 'Organic Fruit Facial',
+        category: 'facial',
+        price: 299,
+        badge: 'Flyer Deal #12 Budget Favorite',
+        description: 'Natural fruit enzymes and extracts that gently nourish, soften and refresh teenage & sensitive skin.',
+        duration: '35 mins',
+        popular: true
+      },
+      {
+        id: 'korean-glow-facial',
+        title: 'Korean Glass Glow Facial',
+        category: 'facial',
+        price: 499,
+        badge: 'Flyer Deal #12 Trending',
+        description: 'Hydrating sheet masks and multi-layer essence massage for crystal-clear glass skin.',
+        duration: '50 mins',
+        popular: true
+      },
+      // 13. Shahnaz Gold Facial ₹499
+      {
+        id: 'shahnaz-gold-facial',
+        title: 'Shahnaz Husain Gold Facial',
+        category: 'facial',
+        price: 499,
+        badge: 'Flyer Deal #13 Herbal Luxury',
+        description: 'Authentic Shahnaz 24 Carat Gold formulation for royal bridal radiance and anti-aging care.',
+        duration: '50 mins',
+        popular: false
+      },
+      // 14. Manicure, Pedicure ₹699
+      {
+        id: 'mani-pedi',
+        title: 'Deluxe Manicure & Pedicure Combo',
+        category: 'body',
+        price: 699,
+        badge: 'Flyer Deal #14 Spa Care',
+        description: 'Herbal soak, dead skin exfoliation, cuticle grooming, foot massage, and nail buffing.',
+        duration: '60 mins',
+        popular: true
+      },
+      // 15. Simple Hair Cut ₹99
+      {
+        id: 'hair-cut',
+        title: 'Simple Hair Cut & Trimming',
+        category: 'hair',
+        price: 99,
+        badge: 'Flyer Deal #15',
+        description: 'Neat split-end trim or simple straight haircut to maintain fresh, healthy hair length.',
+        duration: '20 mins',
+        popular: true
+      },
+      // 16. Straightening (Temporary) ₹499
+      {
+        id: 'straightening-temp',
+        title: 'Temporary Hair Straightening & Styling',
+        category: 'hair',
+        price: 499,
+        badge: 'Flyer Deal #16 Event Glam',
+        description: 'Heat-protected professional iron straightening for sleek, glass-finish straight hair.',
+        duration: '40 mins',
+        popular: true
+      }
+    ];
+
+    // State
+    let selectedServices = [];
+    let currentCategory = 'all';
+
+    // Render Services Grid
+    function renderServices(items) {
+      const grid = document.getElementById('servicesGrid');
+      const noResults = document.getElementById('noResults');
+
+      if (!items || items.length === 0) {
+        grid.innerHTML = '';
+        noResults.classList.remove('hidden');
+        return;
+      }
+
+      noResults.classList.add('hidden');
+      grid.innerHTML = items.map(item => {
+        const isSelected = selectedServices.some(s => s.id === item.id);
+
+        return `
+          <div class="luxury-card bg-white rounded-3xl p-6 border ${isSelected ? 'border-roseGold-500 ring-2 ring-roseGold-400/30' : 'border-roseGold-100/80'} shadow-sm flex flex-col justify-between relative overflow-hidden group">
+            
+            ${item.popular ? `
+              <div class="absolute top-0 right-0 bg-gradient-to-l from-roseGold-600 to-roseGold-500 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-bl-xl shadow-sm">
+                Most Booked
+              </div>
+            ` : ''}
+
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="text-[11px] font-bold text-roseGold-700 bg-roseGold-50 px-2.5 py-0.5 rounded-full border border-roseGold-200/60">
+                  ${item.badge}
+                </span>
+                <span class="text-[11px] text-gray-400 font-medium">
+                  <i class="fa-regular fa-clock text-[10px]"></i> ${item.duration}
+                </span>
+              </div>
+
+              <h4 class="font-serif text-lg font-bold text-parlourDark group-hover:text-roseGold-700 transition-colors">
+                ${item.title}
+              </h4>
+
+              <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">
+                ${item.description}
+              </p>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-gray-100 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold text-gray-400 block">Offer Price</span>
+                <span class="font-serif text-2xl font-bold text-parlourDark">₹${item.price}</span>
+              </div>
+
+              <button 
+                onclick="toggleService('${item.id}')"
+                class="px-4 py-2 rounded-full text-xs font-bold transition-all flex items-center gap-1.5 ${
+                  isSelected 
+                  ? 'bg-roseGold-700 text-white shadow' 
+                  : 'bg-roseGold-50 text-roseGold-800 hover:bg-roseGold-100 border border-roseGold-200'
+                }"
+              >
+                <i class="fa-solid ${isSelected ? 'fa-check' : 'fa-plus'}"></i>
+                <span>${isSelected ? 'Added' : 'Add to Book'}</span>
+              </button>
+            </div>
+
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Toggle service selection
+    function toggleService(id) {
+      const item = servicesData.find(s => s.id === id);
+      if (!item) return;
+
+      const index = selectedServices.findIndex(s => s.id === id);
+      if (index > -1) {
+        selectedServices.splice(index, 1);
+        showToast(`Removed "${item.title}"`);
+      } else {
+        selectedServices.push(item);
+        showToast(`Added "${item.title}" (₹${item.price})`);
+      }
+
+      updateUI();
+    }
+
+    // Update Totals and Sync UI components
+    function updateUI() {
+      // Re-filter and render
+      applyFilterAndSearch();
+
+      const total = selectedServices.reduce((sum, s) => sum + s.price, 0);
+      const count = selectedServices.length;
+
+      // Update counters
+      document.getElementById('headerCartCount').textContent = count;
+      document.getElementById('selectedCount').textContent = count;
+      document.getElementById('selectedTotal').textContent = total;
+      document.getElementById('drawerTotal').textContent = total;
+
+      // Floating banner visibility
+      const floatBar = document.getElementById('floatingSummary');
+      if (count > 0) {
+        floatBar.classList.remove('hidden');
+      } else {
+        floatBar.classList.add('hidden');
+      }
+
+      // Update preview in Booking form
+      const previewDiv = document.getElementById('bookingSelectedServicesPreview');
+      if (count === 0) {
+        previewDiv.innerHTML = '<span class="text-gray-400 italic">No treatments picked yet. Click "Add to Book" on any service above.</span>';
+      } else {
+        previewDiv.innerHTML = `
+          <div class="flex flex-wrap gap-1.5 mb-1">
+            ${selectedServices.map(s => `
+              <span class="inline-flex items-center gap-1 bg-white px-2 py-0.5 rounded-lg border border-roseGold-200 text-roseGold-900 font-medium">
+                ${s.title} (₹${s.price})
+                <button type="button" onclick="toggleService('${s.id}')" class="text-gray-400 hover:text-red-500 font-bold ml-1">×</button>
+              </span>
+            `).join('')}
+          </div>
+          <div class="text-right font-semibold text-roseGold-800">Total: ₹${total}</div>
+        `;
+      }
+
+      // Update Drawer List
+      const drawerList = document.getElementById('drawerItemsList');
+      if (count === 0) {
+        drawerList.innerHTML = `
+          <div class="text-center py-12 text-gray-400">
+            <i class="fa-solid fa-basket-shopping text-3xl mb-2"></i>
+            <p class="text-xs">Your treatment cart is empty.</p>
+          </div>
+        `;
+      } else {
+        drawerList.innerHTML = selectedServices.map(item => `
+          <div class="flex items-center justify-between p-3 rounded-2xl bg-gray-50 border border-gray-100">
+            <div>
+              <div class="text-xs font-bold text-gray-900">${item.title}</div>
+              <div class="text-[11px] text-gray-500">₹${item.price} • ${item.duration}</div>
+            </div>
+            <button onclick="toggleService('${item.id}')" class="text-gray-400 hover:text-red-600 p-1 text-sm">
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+          </div>
+        `).join('');
+      }
+    }
+
+    // Filter by Category
+    function filterCategory(cat) {
+      currentCategory = cat;
+
+      // Update active tab styles
+      document.querySelectorAll('.category-tab').forEach(btn => {
+        btn.className = 'category-tab px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all bg-white text-gray-700 hover:bg-roseGold-50 border border-gray-200';
+      });
+
+      const activeBtn = document.getElementById(`tab-${cat}`);
+      if (activeBtn) {
+        activeBtn.className = 'category-tab px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all bg-roseGold-700 text-white shadow-sm';
+      }
+
+      applyFilterAndSearch();
+    }
+
+    // Search and filter executor
+    function applyFilterAndSearch() {
+      const query = (document.getElementById('serviceSearch').value || '').toLowerCase().trim();
+
+      let filtered = servicesData;
+
+      if (currentCategory !== 'all') {
+        if (currentCategory === 'express') {
+          // Express specials are ₹99 deals
+          filtered = filtered.filter(s => s.price === 99);
+        } else {
+          filtered = filtered.filter(s => s.category === currentCategory);
+        }
+      }
+
+      if (query) {
+        filtered = filtered.filter(s => 
+          s.title.toLowerCase().includes(query) || 
+          s.description.toLowerCase().includes(query) ||
+          s.badge.toLowerCase().includes(query)
+        );
+      }
+
+      renderServices(filtered);
+    }
+
+    function handleSearch() {
+      applyFilterAndSearch();
+    }
+
+    function clearAllSelections() {
+      selectedServices = [];
+      updateUI();
+      showToast('All treatments cleared');
+    }
+
+    // Drawer Controls
+    function openEstimatorDrawer() {
+      const drawer = document.getElementById('estimatorDrawer');
+      const content = document.getElementById('drawerContent');
+      drawer.classList.remove('pointer-events-none');
+      drawer.classList.remove('opacity-0');
+      content.classList.remove('translate-x-full');
+    }
+
+    function closeEstimatorDrawer() {
+      const drawer = document.getElementById('estimatorDrawer');
+      const content = document.getElementById('drawerContent');
+      drawer.classList.add('opacity-0');
+      drawer.classList.add('pointer-events-none');
+      content.classList.add('translate-x-full');
+    }
+
+    // Show temporary toast
+    function showToast(msg) {
+      const toast = document.getElementById('toastNotification');
+      const msgEl = document.getElementById('toastMessage');
+      msgEl.textContent = msg;
+
+      toast.classList.remove('translate-y-[-100px]', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.add('translate-y-[-100px]', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 2400);
+    }
+
+    // Direct WhatsApp booking for selected cart
+    function openWhatsAppCheckout() {
+      if (selectedServices.length === 0) {
+        alert("Please select at least one treatment first!");
+        return;
+      }
+
+      const total = selectedServices.reduce((sum, s) => sum + s.price, 0);
+      const servicesListText = selectedServices.map((s, idx) => `${idx + 1}. ${s.title} (₹${s.price})`).join('%0A');
+
+      const message = `Hello Ami Sheth (Ami's Parlour),%0A%0AI would like to book an appointment with you for the following services:%0A${servicesListText}%0A%0A*Estimated Total:* ₹${total}%0A*Special Offer:* Hath Ma Mukvani Mehndi Na Con Madse%0A%0APlease let me know available dates & time slots at your Seventh Bliss, Gota parlour. Thank you!`;
+
+      window.open(`https://wa.me/916352891036?text=${message}`, '_blank');
+    }
+
+    // Handle Appointment Form Submit
+    function handleAppointmentSubmit(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('clientName').value.trim();
+      const phone = document.getElementById('clientPhone').value.trim();
+      const date = document.getElementById('clientDate').value;
+      const time = document.getElementById('clientTime').value;
+      const notes = document.getElementById('clientNotes').value.trim();
+
+      const total = selectedServices.reduce((sum, s) => sum + s.price, 0);
+      let servicesText = '';
+
+      if (selectedServices.length > 0) {
+        servicesText = '%0A*Selected Services:*%0A' + selectedServices.map((s, idx) => `• ${s.title} - ₹${s.price}`).join('%0A') + `%0A*Estimated Total:* ₹${total}%0A`;
+      } else {
+        servicesText = '%0A*Selected Services:* (Discuss during appointment/Custom)%0A';
+      }
+
+      const notesText = notes ? `%0A*Client Notes:* ${encodeURIComponent(notes)}%0A` : '';
+
+      const message = `*NEW APPOINTMENT BOOKING - AMI'S PARLOUR*%0A%0A*Client Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Preferred Date:* ${date}%0A*Preferred Time:* ${encodeURIComponent(time)}${servicesText}${notesText}%0A*Festive Offer:* Complimentary Mehndi Cones (Hath Ma Mukvani Mehndi Na Con)%0A*Parlour Location:* C-103, Seventh Bliss, Gota, Ahmedabad%0A%0APlease confirm my booking slot. Thank you!`;
+
+      window.open(`https://wa.me/916352891036?text=${message}`, '_blank');
+    }
+
+    // Initialize on page load
+    window.addEventListener('DOMContentLoaded', () => {
+      // Set minimum date to today
+      const today = new Date().toISOString().split('T')[0];
+      const dateInput = document.getElementById('clientDate');
+      if (dateInput) {
+        dateInput.min = today;
+        dateInput.value = today;
+      }
+
+      // Initial render
+      renderServices(servicesData);
+      updateUI();
+    });
+  </script>
+</body>
+</html>
